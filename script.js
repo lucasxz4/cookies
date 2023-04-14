@@ -1,13 +1,13 @@
-let cookies = document.querySelector(".cookies");
-let acept = document.querySelector(".button");
+let acept = document.querySelector('.button')
+let card = document.querySelector('#card')
 
 acept.addEventListener('click', function() {
-    localStorage.lgpd =  'sim';
-    cookies.style.display = 'none';
+  card.style.display = 'none';
+  localStorage.aceito = 'sim'
 })
 
-if (localStorage.lgpd == 'sim') {
-    cookies.style.display = 'none'
+if (localStorage.aceito == 'sim') {
+    card.style.display = 'none'
 } else {
-    cookies.style.display = 'flex'
+    card.style.display = 'block'
 }
